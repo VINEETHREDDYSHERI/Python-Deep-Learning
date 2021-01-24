@@ -4,6 +4,7 @@ The following are the difference between the Python2 and Python3
     Example: Python3: print ("hello")	Python2: print "hello"
 2) Division operator
     Python2 will give round off value(i.e 12/5 as 2) whereas Python3 the gives the exact decimal value(i.e 12/5 as 2.4)
-3) The default storing procedure for the string is unicode in Python3 but in Python2 to define the string as unicode use 'u'.
+3) The default storing procedure for the string is Unicode in Python3 where as in Python2 it is ASCII. Inorder to store the
+    string as Unicode have to use 'u' in Python2.
 4) In Error handling, python3 will make use of the 'as' keyword.
 5) Python3 will not support 'xrange()' function.
