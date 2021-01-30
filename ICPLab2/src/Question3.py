@@ -12,7 +12,6 @@ def createWordCountDict():
         currentLine = inputFile.readline()  # reading the next Line
     return wordCountDict
 
-
 # Function that will write word and its wordCount to the wordCountOutput.txt File
 def writeWordCountToFile(wordCountDict):
     outPutFile = open("wordCountOutput.txt", "w")  # Opening the file in write mode
@@ -20,12 +19,13 @@ def writeWordCountToFile(wordCountDict):
     currentLine = inputFile.readline().replace("\n", "")  # Removing newline when reading the line of a file
     while currentLine != "":  # iterating the loop until currentLine variable is empty
         for word in currentLine.split(" "):  # iterating over all the words in the currentLine variable
-            if word in wordCountDict.keys():   # checking if word is present in dictionary
-                wordData = str(word) + ": " + str(wordCountDict[word]) + "\n"
+            if word in wordCountDict.keys():  # checking if word is present in dictionary
+                wordData = str(word) + ": " + str(wordCountDict[word])
+                print(wordData)
+                wordData += "\n"
                 outPutFile.write(wordData)  # writing the word and its count to the file in new line
                 wordCountDict.pop(word)  # removing the word from the dictionary
         currentLine = inputFile.readline()  # reading the next Line
-
 
 wordCount = createWordCountDict()  # Function returns wordCount of each word in Dictionary
 writeWordCountToFile(wordCount)  # Function that writes the word and its wordCount to the wordCountOutput.txt File
