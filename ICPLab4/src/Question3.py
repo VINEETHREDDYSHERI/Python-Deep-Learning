@@ -1,7 +1,8 @@
-# Importing the pandas and packages from sklearn to split the data, Naive Bayes algorithm
+# importing the pandas and packages from sklearn to split the data, Naive Bayes algorithm and metrics
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
+from sklearn.metrics import classification_report
 
 dataFrame = pd.read_csv("glass.csv")  # Loading the train.csv file data using pandas
 Y_dataFrame = dataFrame["Type"]  # Creating the target dataFrame
@@ -12,8 +13,10 @@ svm_model = SVC(kernel="linear")  # Creating the SVM Model and setting the kerne
 svm_model.fit(X_train, y_train)  # Training the model
 y_predict = svm_model.predict(X_test)  # Testing the model on the unseen data( i.e Test dataset)
 accuracy = round(svm_model.score(X_test, y_test) * 100, 2)  # Finding the accuracy of model on Unseen data( Test data)
-print("The Accuracy of the model using SVM Linear Algorithm is", accuracy)  # Printing the accuracy of model
+print("The Accuracy of the model using SVM Linear Kernel is", accuracy)  # Printing the accuracy of model
+print("The Classification Report using SVM Linear Kernel is: ")
+print(classification_report(y_test, y_predict))  # Printing the complete report
 # The SVM linear algorithm is better than Naive bayes algorithm.
 # One of the reason is the naive assumption of independence between the features.
 # Other reason is the because of the small dataset.
-# SVM Linear kernel is beating the Naive bayes. Whereas the Naive bayes is beating other SVM kernels(i.e poly,rbf,sigmoid)
+# SVM Linear kernel is beating the Naive bayes. Whereas the Naive bayes is performing well when compared to other SVM kernels(i.e poly,rbf,sigmoid)
