@@ -47,4 +47,4 @@ KMeansModel.fit(dataFrame_pca)  # Fitting the data to the model
 clusters = KMeansModel.predict(dataFrame_pca)   # Predicting the cluster for each sample.
 # silhouette_score indicates how dense the data is with in the cluster range from -1 to 1.
 print("The Silhouette score is: ", silhouette_score(dataFrame_pca, clusters))
-# The score is 0.45 which indicates the model is performing good and which is equivalent to First model
+# The score is 0.40 which indicates the model is performing good but not as good as First model
