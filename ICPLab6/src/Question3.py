@@ -42,7 +42,7 @@ plt.ylabel("Sum of Squares within the cluster")
 plt.show()
 # From the plot we can conclude that the best No.of cluster is 4.
 
-KMeansModel = KMeans(n_clusters=3, random_state=0)  # Creating the KMeans Model no.of clusters as 4
+KMeansModel = KMeans(n_clusters=4, random_state=0)  # Creating the KMeans Model no.of clusters as 4
 KMeansModel.fit(dataFrame_pca)  # Fitting the data to the model
 clusters = KMeansModel.predict(dataFrame_pca)   # Predicting the cluster for each sample.
 # silhouette_score indicates how dense the data is with in the cluster range from -1 to 1.
