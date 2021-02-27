@@ -12,4 +12,4 @@ ICP4 - https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP4
 
 ICP5- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP5
 
-ICP5- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP6
+ICP6- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP6
