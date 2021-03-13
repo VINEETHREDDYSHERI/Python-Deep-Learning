@@ -15,3 +15,5 @@ ICP5- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP5
 ICP6- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP6
 
 ICP7- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP7
+
+ICP8- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP8
