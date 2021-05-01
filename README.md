@@ -25,3 +25,5 @@ ICP10- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP10
 ICP11- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP11
 
 ICP12- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP12
+
+ICP13- https://github.com/VINEETHREDDYSHERI/Python-Deep-Learning/wiki/ICP13
